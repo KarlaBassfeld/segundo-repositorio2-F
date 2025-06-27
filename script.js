@@ -6,6 +6,7 @@ function mostraPalavraChave () {
     //alert("Fui clicado!");
     const texto = document.querySelector('#entrada-de-texto').value;   
     const campoResultado = document.querySelector('#resultado-palavrachave');
+    const palvras = texto.split(" ")
 
-    campoResultado.textContent = texto; 
+    campoResultado.textContent = palvras.joins(", ");
 }
